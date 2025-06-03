@@ -1,5 +1,4 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -7,5 +6,16 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<section class="hero is-primary">
+		<div class="hero-body">
+			<h1 class="title">East of CT River</h1>
+			<h2 class="subtitle">Community events and gatherings</h2>
+		</div>
+	</section>
+	<div class="container is-fluid">
+		<iframe frameborder="0" height="500px" width="100%" src="https://calendar.online/ea491b34c3f4ae2a09ab?iframe=true"></iframe>
+	</div>
+	<div class="box">
+		<p>Comments, questions, or suggestions? Send an email to <a href="mailto:eastofctriver@tuta.com"></a></p>
+	</div>
 </Layout>
